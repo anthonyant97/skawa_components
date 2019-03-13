@@ -61,6 +61,9 @@ class SkawaDataTableComponent<T extends RowData> implements OnDestroy, AfterView
   final Disposer _tearDownDisposer = new Disposer.oneShot();
 
   @Input()
+  Function goToDetail;
+
+  @Input()
   bool selectable;
 
   @Input()
