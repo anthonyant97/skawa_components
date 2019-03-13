@@ -34,6 +34,7 @@
         [class.highlighted]="row == highlightedRow">
         <td *ngIf="selectable">
             <material-checkbox
+                    (click)="$event.stopPropagation()"
                     class="selector-checkbox"
                     (checkedChange)="changeRowSelection(row, $event)"
                     [checked]="row.checked"></material-checkbox>
