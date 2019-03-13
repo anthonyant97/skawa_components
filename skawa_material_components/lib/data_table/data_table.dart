@@ -60,7 +60,7 @@ class SkawaDataTableComponent<T extends RowData> implements OnDestroy, AfterView
       new StreamController<SkawaDataTableColComponent<T>>.broadcast(sync: true);
   final Disposer _tearDownDisposer = new Disposer.oneShot();
 
-  @Input()
+  @Input('detail')
   Function goToDetail;
 
   @Input()
