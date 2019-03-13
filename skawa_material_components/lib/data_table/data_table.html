@@ -30,7 +30,7 @@
         [class.selected]="row.checked"
         [class.odd-row]="odd"
         [class.even-row]="!odd"
-        (click)="goToDetail; $event.stopPropagation()"
+        (click)="goToDetail(row); $event.stopPropagation()"
         [class.highlighted]="row == highlightedRow">
         <td *ngIf="selectable">
             <material-checkbox
