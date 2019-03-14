@@ -60,8 +60,16 @@ class SkawaDataTableComponent<T extends RowData> implements OnDestroy, AfterView
       new StreamController<SkawaDataTableColComponent<T>>.broadcast(sync: true);
   final Disposer _tearDownDisposer = new Disposer.oneShot();
 
+  //override tr click
   @Input('detail')
   Function goToDetail;
+
+  //override checkbox change
+  @Input('check')
+  Function selectedRow;
+
+  @Input('all-check')
+  Function selectedAllRows;
 
   @Input()
   bool selectable;
