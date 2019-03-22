@@ -1,9 +1,4 @@
-@import 'package:angular_components/css/material/material';
-@import 'package:angular_components/material_checkbox/mixins';
 
-:host {
-  @include material-checkbox-color(#341919, $modifier: '.custom-theme');
-}
 
 @import "../css/skawa-material";
 
@@ -131,4 +126,11 @@
   .numeric-column, .numeric-column--header, .numeric-column--footer {
     text-align: right;
   }
+}
+
+@import 'package:angular_components/css/material/material';
+@import 'package:angular_components/material_checkbox/mixins';
+
+:host {
+  @include material-checkbox-color(#341919, $modifier: '.custom-theme');
 }
