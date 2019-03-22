@@ -3,6 +3,7 @@
     <tr>
         <th *ngIf="selectable">
             <material-checkbox #markAllCheckbox
+                                class="custom-theme"
                                (click)="markAllRowsChecked(markAllCheckbox.checked, true); $event.stopPropagation(); selectedAllRows(rows)"
                                [checked]="isEveryRowChecked"
                                *ngIf="multiSelection">
