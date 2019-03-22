@@ -1,8 +1,8 @@
 @import 'package:angular_components/css/material/material';
 @import 'package:angular_components/material_checkbox/mixins';
 
-.custom-theme {
-  @include material-checkbox-color(#341919);
+:host {
+  @include material-checkbox-color(#341919, $modifier: '.custom-theme');
 }
 
 @import "../css/skawa-material";
